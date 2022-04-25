@@ -13,4 +13,4 @@ jobs:
       name: '${{ matrix.stage }}'
     runs-on: ubuntu-latest
     steps:
-      - run: sleep 10; false
+      - run: sleep 10; true
