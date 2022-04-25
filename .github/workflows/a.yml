@@ -6,7 +6,7 @@ jobs:
   workflow-a-job-a:
     strategy:
       matrix:
-        stage: ['DEV', 'INT', 'PRD']
+        stage: ['DEV']
       fail-fast: true
       max-parallel: 2
     environment:
