@@ -1,0 +1,16 @@
+name: workflow-a
+
+on: [push]
+
+jobs:
+  workflow-a-job-a:
+    strategy:
+      matrix:
+        stage: ['DEV', 'INT', 'PRD']
+      fail-fast: true
+      max-parallel: 2
+    environment:
+      name: '${{ matrix.stage }}'
+    runs-on: ubuntu-latest
+    steps:
+      - run: true
