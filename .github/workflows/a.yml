@@ -1,6 +1,9 @@
 name: workflow-a
 
-on: [push]
+on:
+  push:
+  schedule:
+    - cron: '* * * * *'
 
 jobs:
   workflow-a-job-a:
